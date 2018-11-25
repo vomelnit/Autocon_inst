@@ -1,0 +1,114 @@
+1541248156183	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "lang=en" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eBcvhoMbs7pR"
+
+(firefox:7177): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:7177): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541248163160	Marionette	INFO	Listening on port 37277
+1541248163228	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.instagram.com/static/bundles/base/ConsumerCommons.js/89335b6b0b53.js, line 1: unreachable code after return statement
+JavaScript warning: https://www.instagram.com/static/bundles/base/ConsumerCommons.js/89335b6b0b53.js, line 1: unreachable code after return statement
+JavaScript warning: https://www.instagram.com/static/bundles/base/ConsumerCommons.js/89335b6b0b53.js, line 1: unreachable code after return statement
+JavaScript warning: https://www.instagram.com/static/bundles/base/ConsumerCommons.js/89335b6b0b53.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: https://www.instagram.com/static/bundles/base/ConsumerCommons.js/89335b6b0b53.js, line 1: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.instagram.com/static/bundles/base/ConsumerCommons.js/89335b6b0b53.js, line 1: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.instagram.com/static/bundles/base/ConsumerCommons.js/89335b6b0b53.js, line 1: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 7177, Gecko_IOThread] WARNING: pipe error (86): Соединение разорвано другой стороной: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541248178112	Marionette	INFO	Stopped listening on port 37277
+1541248398534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--lang=en" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XH2xxc7slxii"
+
+(firefox:7553): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:7553): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541248403830	Marionette	INFO	Listening on port 36055
+1541248403880	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7553, Gecko_IOThread] WARNING: pipe error (86): Соединение разорвано другой стороной: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541248430796	Marionette	INFO	Stopped listening on port 36055
+1541249950415	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--lang=en" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FHcEWVaczCLu"
+
+(firefox:8689): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8689): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541249956368	Marionette	INFO	Listening on port 35206
+1541249956431	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541249970467	Marionette	INFO	Stopped listening on port 35206
+[Parent 8689, Gecko_IOThread] WARNING: pipe error (78): Соединение разорвано другой стороной: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541249973227	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--lang=en" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xs2wRqKAMULN"
+
+(firefox:8918): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8918): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541249979114	Marionette	INFO	Listening on port 45162
+1541249979183	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541249988992	Marionette	INFO	Stopped listening on port 45162
+[Parent 8918, Gecko_IOThread] WARNING: pipe error (78): Соединение разорвано другой стороной: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541249991068	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--lang=en" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.F2627IGplNpY"
+
+(firefox:9143): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9143): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541249994281	Marionette	INFO	Listening on port 46336
+1541249994391	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541250005067	Marionette	INFO	Stopped listening on port 46336
+1541250008100	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--lang=en" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zG3JvyFvd8qP"
