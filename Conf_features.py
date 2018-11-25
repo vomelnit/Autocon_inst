@@ -1,6 +1,5 @@
 username="username"
 password="password"
-# username="agro_fun1"
-# password="agro_fun"
+
 fb_mail="fb"
 fb_password="pass"
