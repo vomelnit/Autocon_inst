@@ -1,7 +1,6 @@
-username="autoconsulting.ua"
-password="autoconsulting.ua496"
+username="username"
+password="password"
 # username="agro_fun1"
 # password="agro_fun"
-fb_mail="autocon@ukr.net"
-fb_password="autocon" \
-            "496"
+fb_mail="fb"
+fb_password="pass"
