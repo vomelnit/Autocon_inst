@@ -11,7 +11,7 @@ import urllib.request
 import Image_formalization
 import Conf_features
 import hashtag_creator
-
+import Cookies
 
 
 mobile_emulation = { "deviceName": "iPhone 6" }
@@ -79,49 +79,59 @@ def enter_to_instagram(driver):
 
         except:
                 pass
-        driver.get("https://www.instagram.com/accounts/login/?source=auth_switcher")
-        # driver.implicitly_wait(10)
-        #time.sleep(1)
-        #WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH,"//*[text()='Log in']")))
-        #try:
-        # WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//main/article/div/div/div/button")))
-        # button_login = driver.find_element_by_xpath("//*[text()='Log in']")
-        # button_login.click()
-            #WebDriverWait(driver, 10).until(EC.)
 
-            #user_mail = driver.find_element_by_xpath("//*[@class='login-button__user']")
-            #assert user_mail.text == "au"
-        # except selenium.common.exceptions.NoSuchElementException:
-        #     link_entry = driver.find_element_by_link_text("/accounts/login/?source=auth_switcher")
-        #     link_entry.click()
-        WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[text()='Phone number, username, or email']")))
-        login_field = driver.find_element_by_name("username")
-        login_field.send_keys(username)
-        WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, "//*[text()='Password']")))
-        password_field = driver.find_element_by_name("password")
-        password_field.send_keys(psw)
-        # button_entry = driver.find_element_by_xpath("//*[text()='Войти']")
-        WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[text()='Log in']")))
-        time.sleep(1)
-        entry_form = driver.find_element_by_xpath("//form[@method='post']")
-        entry_form.submit()
-        #button_entry = driver.find_element_by_xpath("//*[text()='Log in']")
-        #button_entry.click()
-        print("Log in")
-        #time.sleep(5)
-        #driver.implicitly_wait(10)
-        #WebDriverWait(driver,10).until(EC.visibility_of_all_elements_located)
+
         try:
-                WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[text()='Not Now']")))
+                driver = Cookies.Get_cookies(driver, Conf_features.Cookies_file_name)
+        except Exception as msg:
+                print(msg)
+                driver.get("https://www.instagram.com/accounts/login/?source=auth_switcher")
+                #time.sleep(60)
+                # driver.implicitly_wait(10)
+                #time.sleep(1)
+                #WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH,"//*[text()='Log in']")))
+                #try:
+                # WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//main/article/div/div/div/button")))
+                # button_login = driver.find_element_by_xpath("//*[text()='Log in']")
+                # button_login.click()
+                    #WebDriverWait(driver, 10).until(EC.)
+
+                    #user_mail = driver.find_element_by_xpath("//*[@class='login-button__user']")
+                    #assert user_mail.text == "au"
+                # except selenium.common.exceptions.NoSuchElementException:
+                #     link_entry = driver.find_element_by_link_text("/accounts/login/?source=auth_switcher")
+                #     link_entry.click()
+                ###########
+                WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[text()='Phone number, username, or email']")))
+                login_field = driver.find_element_by_name("username")
+                login_field.send_keys(username)
+                WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH, "//*[text()='Password']")))
+                password_field = driver.find_element_by_name("password")
+                password_field.send_keys(psw)
+                # button_entry = driver.find_element_by_xpath("//*[text()='Войти']")
+                WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[text()='Log in']")))
+                time.sleep(1)
+                entry_form = driver.find_element_by_xpath("//form[@method='post']")
+                entry_form.submit()
+                #button_entry = driver.find_element_by_xpath("//*[text()='Log in']")
+                #button_entry.click()
+                print("Log in")
+
+                #time.sleep(5)
                 #driver.implicitly_wait(10)
-                button_not_now = driver.find_element_by_xpath("//*[text()='Not Now']")
-                button_not_now.click()
-                print("Not now")
-        except:
-                pass
-        # driver.get("https://www.instagram.com/" + username)
-        # WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//span[@aria-label='Profile']")))
+                #WebDriverWait(driver,10).until(EC.visibility_of_all_elements_located)
+                try:
+                        WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[text()='Not Now']")))
+                        #driver.implicitly_wait(10)
+                        button_not_now = driver.find_element_by_xpath("//*[text()='Not Now']")
+                        button_not_now.click()
+                        print("Not now")
+                except:
+                        pass
+                # driver.get("https://www.instagram.com/" + username)
+                Cookies.pickle.dump(driver.get_cookies(), open(Conf_features.Cookies_file_name, "wb"))
+                # WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//span[@aria-label='Profile']")))
         driver.get("https://www.instagram.com/"+username)
         #time.sleep(1)
         WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located)
@@ -284,6 +294,7 @@ def test_user_login_in_mail_box(dr):
         print(time.strftime("%H:%M:%S", time.gmtime(time.time())))
         try:
                 enter_to_instagram(driver)
+                Cookies.pickle.dump(driver.get_cookies(), open(Conf_features.Cookies_file_name, "wb"))
         except:
             print("Error_of instagram")
             attempt+=1
@@ -307,7 +318,7 @@ def begin_of_driver(image_link, name, text, hashtag, number,high_text,link):
             print("Attempt #"+str(attempt))
             print(str(successful_post))
             #attempt+=1
-            if (attempt>=8): break
+            if (attempt>=15): break
         if_post=successful_post
         successful_post=False
         return if_post
