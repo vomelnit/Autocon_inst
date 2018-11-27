@@ -1,6 +1,6 @@
-username="autoconsulting.ua"
-password="autoconsulting.ua496"
+username="username"
+password="password"
 
-fb_mail="autocon@ukr.net"
-fb_password="autocon496"
+fb_mail="mail"
+fb_password="pass"
 Cookies_file_name="Cookies.pkl"
